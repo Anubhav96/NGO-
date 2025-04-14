@@ -55,8 +55,34 @@ right: 15px;
     color: rgba(0, 0, 0, 0.527);
     font-size: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 20px;
-} 
+}
+@media (max-width: 768px) {
+    .header1, .telephone, .social {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+    }
+  
+    .header2 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 10px 0;
+      height: auto;
+    }
+  
+    .img-logo img {
+      height: 70px;
+      width: 120px;
+    }
+  
+    .Home {
+      flex-direction: column;
+      gap: 10px;
+      margin-left: 0;
+    }
+  }
+  
 .container{
     margin-top: 39px;
     position: relative;
@@ -274,6 +300,29 @@ left: 70px;
     background-color: #ff6600; 
     
 }
+@media (max-width: 768px) {
+  .text5 h1 {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .text6 {
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .become-member button {
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 18px;
+    font-size: 16px;
+    bottom: 60px;
+  }
+}
+
 footer{
     
     margin-top:0px;
@@ -352,6 +401,7 @@ opacity: 1;
     display: flex;
     justify-content:center;
 }
+
 .testimonial-slider-section {
     background: #cfcacaad;
     padding: 60px 20px;
